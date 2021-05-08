@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+    <link rel="stylesheet" href="styles.css">
+    <title>FrontEnd Canvas | Checkout Page</title>
+</head>
+
+<body>
+
+    <div class="form-wrapper">
+        <div class="row center-xs">
+            <div class="col-xs-6">
+                <div class="form-wrapper-title">
+                    <h2> Get unlimited access <span>to everything</span></h2>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-fluid">
+            <form action="">
+
+                <input type="radio" name="monthly" id="monthly">
+                <label for="monthly">Monthly </label>
+                <input type="radio" name="yearly" id="yearly">
+                <label for="yearly">Yearly <br></label>
+
+            </form>
+        </div>
+        <br><br><br>
+        <div class="container-fluid">
+
+            <div class="second-form-title">
+                <h2>Total Billed $50</h2>
+                <p class="disclaimer">Enter your credit card details to complete subscription</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="container-fluid">
+            <form action="">
+                <label for="cc-number">Card number</label><br>
+                <input type="number" name="cc-number" id="cc-number" placeholder="1234 1234 1234 1234" required><br><br>
+                <label for="cc-date">Expiration date</label>
+                <br><input type="month" name="cc-date" id="cc-date" placeholder="MM/YY"><label for="cc-cvv"> Security code</label><input type="number" name="cc-cvv" id="cc-cvv" placeholder="123">
+
+                <br><br><br>
+                <p class="disclaimer center">
+                    By subscribing you agree to our Use of Service. Your payment method will be charged with $50 and you’ll have access to all locked features until 20 Jan 2022.
+                </p>
+
+                <br><br><br> <button type="submit">Pay Now</button>
+            </form>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
