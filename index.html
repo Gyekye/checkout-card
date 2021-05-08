@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
     <link rel="stylesheet" href="styles.css">
-    <title>FrontEnd Canvas | Checkout Page</title>
+    <title>FrontEnd Canvas|Checkout Page</title>
 </head>
 
 <body>
@@ -23,37 +23,75 @@
         <br><br>
         <div class="container-fluid">
             <form action="">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <fieldset class="monthly">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input type="radio" name="monthly" id="mon">
+                                </div>
+                                <div class="col-xs-6">
+                                    <label for="mon">Monthly</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-xs-6">
+                        <fieldset class="active">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input type="radio" name="monthly" id="mon">
+                                </div>
+                                <div class="col-xs-6">
+                                    <label for="mon">Yearly</label> <span class="chip">save $10</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
 
-                <input type="radio" name="monthly" id="monthly">
-                <label for="monthly">Monthly </label>
-                <input type="radio" name="yearly" id="yearly">
-                <label for="yearly">Yearly <br></label>
-
+                </div>
             </form>
         </div>
-        <br><br><br>
+        <br><br>
         <div class="container-fluid">
 
             <div class="second-form-title">
-                <h2>Total Billed $50</h2>
+                <h3>Total Billed $50</h3>
                 <p class="disclaimer">Enter your credit card details to complete subscription</p>
             </div>
         </div>
         <br>
-
         <div class="container-fluid">
             <form action="">
-                <label for="cc-number">Card number</label><br>
-                <input type="number" name="cc-number" id="cc-number" placeholder="1234 1234 1234 1234" required><br><br>
-                <label for="cc-date">Expiration date</label>
-                <br><input type="month" name="cc-date" id="cc-date" placeholder="MM/YY"><label for="cc-cvv"> Security code</label><input type="number" name="cc-cvv" id="cc-cvv" placeholder="123">
-
-                <br><br><br>
-                <p class="disclaimer center">
-                    By subscribing you agree to our Use of Service. Your payment method will be charged with $50 and you’ll have access to all locked features until 20 Jan 2022.
-                </p>
-
-                <br><br><br> <button type="submit">Pay Now</button>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label for="cc-number">Card number</label>
+                        <br>
+                        <input class="active" type="number" name="cc-number" id="cc-number" placeholder="1234 1234 1234 1234" required>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-xs-6"> <label for="cc-number">Card Security</label>
+                        <br>
+                        <input type="number" name="cc-security" id="cc-security" placeholder="1234" required>
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="cc-expiry">Card Expiration</label>
+                        <br>
+                        <input type="month" name="cc-expiry" id="cc-expiry" placeholder="MM/YY" value="2018-08" required>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row center-xs">
+                    <div class="col-xs-12">
+                        <p class="disclaimer center">
+                            By subscribing you agree to our Use of Service. Your payment method will be charged with $50 and you’ll have access to all locked features until 20 Jan 2022.
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+                <button type="submit">Pay Now</button>
             </form>
         </div>
 
